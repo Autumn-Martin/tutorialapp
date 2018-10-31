@@ -1,4 +1,4 @@
-<h1>Tutorials</h1>
+<!-- <h1>Tutorials</h1>
 
 <ul>
   <% @tutorials.each do |tutorial| %>
@@ -6,4 +6,13 @@
   <% end %>
 </ul>
 
-Search <%= text_field_tag 'search', '', data: {'js-search' => true} %>
+Search <%= text_field_tag 'search', '', data: {'js-search' => true} %> -->
+
+<ul>
+  <% @ideas = ["a","b","c"] %>
+  <%= link_to "Hide", "", class: 'hide', data: {'js-hide-info' => true} %>
+  <% @ideas.each do |idea| %>
+    <li style="display: none"><%= idea %> </li>
+    <li><%= idea*2 %> </li>
+  <% end %>
+</ul>
